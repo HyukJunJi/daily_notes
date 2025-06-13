@@ -46,7 +46,29 @@ OPEN_XML_PATH=D:\MyNotes\Scripts\OpenDailyNote.xml
 
 ---
 
-## 🧹 3. 실행 순서
+## 📅 3. Task Scheduler XML 파일 형식 예시
+
+Windows Task Scheduler에서 매일 수요일에만 노트를 자동으로 생성하고자 할 때 해당 XML 형식을 사용합니다:
+```
+<ScheduleByWeek>
+  <DaysOfWeek>
+    <Monday />
+    <Tuesday />
+    <Wednesday />
+    <Thursday />
+    <Friday />
+  </DaysOfWeek>
+  <WeeksInterval>1</WeeksInterval>
+</ScheduleByWeek>
+<StartBoundary>2025-01-01T00:00:00</StartBoundary>
+```
+StartBoundary에 등록된 시간을 수정하여 또는 아침 9시 등의 시간대에 자동 실행되게 할 수 있습니다.
+> ⚠️ 티폴트 값은 파일 생성시간 24시 notepad가 열리는 시간 09시 입니다.
+가능한 날짜, 중단, 시간 조정은 … XML 내의 태그를 수정하여 결정합니다.
+
+---
+
+## 🧹 4. 실행 순서
 
 1. `.conf` 파일을 설정합니다.
 2. `.xml` 파일을 설정하고 `<Command>` 태그에 `.bat` 경로를 입력합니다.
@@ -54,7 +76,7 @@ OPEN_XML_PATH=D:\MyNotes\Scripts\OpenDailyNote.xml
 
 ---
 
-## 🖳️ 4. 테스크 해제
+## 🖳️ 5. 테스크 해제
 
 작업 스켈줄러에서 테스크를 제거하려면 다음을 실행합니다:
 
