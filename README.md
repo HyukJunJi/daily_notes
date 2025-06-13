@@ -70,4 +70,4 @@ unregister_tasks.bat
 
 최신 릴리즈 버전은 아래에서 확인하고 다운로드하세요:
 
-➡️ [Release v1.0.1 다운로드](https://github.com/HyukJunJi/daily-note/releases)
+➡️ [Release v1.0.1 다운로드](https://github.com/HyukJunJi/daily_notes/releases)
