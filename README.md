@@ -50,20 +50,12 @@ OPEN_XML_PATH=D:\MyNotes\Scripts\OpenDailyNote.xml
 
 Windows Task Scheduler에서 매일 수요일에만 노트를 자동으로 생성하고자 할 때 해당 XML 형식을 사용합니다:
 ```
-<ScheduleByWeek>
-  <DaysOfWeek>
-    <Monday />
-    <Tuesday />
-    <Wednesday />
-    <Thursday />
-    <Friday />
-  </DaysOfWeek>
-  <WeeksInterval>1</WeeksInterval>
-</ScheduleByWeek>
 <StartBoundary>2025-01-01T00:00:00</StartBoundary>
 ```
 StartBoundary에 등록된 시간을 수정하여 또는 아침 9시 등의 시간대에 자동 실행되게 할 수 있습니다.
-> ⚠️ 티폴트 값은 파일 생성시간 24시 notepad가 열리는 시간 09시 입니다.
+OpenDailyNote는 지정한 애플리케이션이 열리는 시간을 지정하는 것입니다.
+CreateDailyNote는 날짜에 맞춰서 txt 파일이 생성되는 시간입니다.
+> ⚠️ 티폴트 값은 파일 생성시간 24시 애플리케이션이 열리는 시간 09시 입니다. (출근시간이 9시여서.. ㅎ)
 가능한 날짜, 중단, 시간 조정은 … XML 내의 태그를 수정하여 결정합니다.
 
 ---
