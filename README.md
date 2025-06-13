@@ -1,6 +1,6 @@
 # 📜 Daily Note 사용법
 
-Windows 작업 스켈준러를 활용한 개인 메모 자동화 시스템입니다. 아래 설정을 통해 매일 자동으로 노트를 생성하고 열 수 있습니다.
+Windows 작업 스켈줄러를 활용한 개인 메모 자동화 시스템입니다. 아래 설정을 통해 매일 자동으로 노트를 생성하고 열 수 있습니다.
 
 ---
 
@@ -42,7 +42,7 @@ OPEN_XML_PATH=D:\MyNotes\Scripts\OpenDailyNote.xml
 <Command>D:\MyNotes\Scripts\open_daily_note.bat</Command>
 ```
 
-> ⚠️ XML 태그의 `<Name>` 등은 실제 타스크 이름인 `CreateDailyNote`, `OpenDailyNote`와 일치해야 정산적으로 등록됩니다.
+> ⚠️ XML 태그의 `<Name>` 등은 실제 테스크 이름인 `CreateDailyNote`, `OpenDailyNote`와 일치해야 정상적으로 등록됩니다.
 
 ---
 
@@ -50,13 +50,13 @@ OPEN_XML_PATH=D:\MyNotes\Scripts\OpenDailyNote.xml
 
 1. `.conf` 파일을 설정합니다.
 2. `.xml` 파일을 설정하고 `<Command>` 태그에 `.bat` 경로를 입력합니다.
-3. `register_tasks.bat`을 실행해 타스크를 Windows 작업 스켈준러에 등록합니다.
+3. `register_tasks.bat`을 실행해 테스크를 Windows 작업 스켈줄러에 등록합니다.
 
 ---
 
-## 🖳️ 4. 타스크 해제
+## 🖳️ 4. 테스크 해제
 
-작업 스켈준러에서 타스크를 제거하려면 다음을 실행합니다:
+작업 스켈줄러에서 테스크를 제거하려면 다음을 실행합니다:
 
 ```bat
 unregister_tasks.bat
@@ -70,4 +70,4 @@ unregister_tasks.bat
 
 최신 릴리즈 버전은 아래에서 확인하고 다운로드하세요:
 
-➡️ [Release v1.0 다운로드](https://github.com/HyukJunJi/daily-note/releases)
+➡️ [Release v1.0.1 다운로드](https://github.com/HyukJunJi/daily-note/releases)
